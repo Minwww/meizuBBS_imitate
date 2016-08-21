@@ -1,0 +1,689 @@
+/*头部整站导航*/
+.wrap{
+	width:1040px;
+	margin:0 auto;
+	position:relative;
+}
+
+.header{
+	border-bottom:1px solid #e9e9e9;
+}
+
+.header .header-logo{
+	height:85px;
+	line-height:90px;	
+	float:left;
+}
+
+.header .header-logo a{
+	display:inline-block;
+	width:115px;
+	height:20px;
+	background:url(../images-shequ/logo-new_294da7f.png)  no-repeat;
+}
+
+.header .header-content{
+	float:right;
+}
+.header .header-content ul{
+	display:inline-block;
+	float:left;
+	line-height:85px;
+}
+.header .header-content ul li{
+	float:left;
+}
+.header .header-content ul li a{
+	line-height:21px;
+	padding:0 22px;
+}
+.header .header-content ul li:hover  a{
+	color:#31aaec;
+}
+
+.header .header-content .login-box{
+	float:right;
+	height:85px;
+	position:relative;
+}
+.header .header-content .login-box .log-img-box{
+	display:inline-block;	
+	margin-top:30px;
+	padding:0 12px;
+}
+
+.header .header-content .login-box .log-img-box .user{
+	width:30px;
+	height:30px;
+}
+.log-img-box img{
+	vertical-align:middle;
+}
+
+.header .header-content .login-box .not-login-sub{
+	display:none;
+	position:absolute;
+	top:85px;
+	right:-1px;
+	height:120px;
+	border:1px solid #e5e5e5;
+	background-color:#fff;
+	z-index:5;
+}
+.not-login-sub p{
+	width:96px;
+	height:30px;
+	margin:20px;
+
+}
+.not-login-sub p .login-r{
+	display:inline-block;
+	width:96px;
+	line-height:30px;
+	background:#00a7ea;
+	color:#fff;
+	text-align:center;
+}
+.not-login-sub p .register{
+	color:#00a7ea;
+}
+.login-box s{
+	display:none;
+	width:70px;
+	height:82px;
+	border:1px solid #e5e5e5;
+	border-top:3px solid #00a7ea;
+	border-bottom:1px solid #fff;
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+/*鼠标滑过出现产品明细*/
+.header .header-sub{	
+	width:100%;
+	position:absolute;
+	top:65px;
+	left:0;
+	background:#fff;
+	z-index:2;
+}
+.header .header-sub .sub-wrap{
+	display:none;
+	width:1040px;
+	margin:0 auto;
+	position:relative;
+	z-index:3;
+}
+
+.header-sub .sub-mx .sub-pro6{
+	display:block;
+	background:url(../images-shequ/pro6_5f39455.png) no-repeat center 0;
+}
+.header-sub .sub-mx .sub-pro5{
+	display:block;
+	background:url(../images-shequ/pro5_e0970c9.png) no-repeat center 0;
+}
+.header-sub .sub-mx .sub-mx5{
+	display:block;
+	background:url(../images-shequ/mx5_d0aca4c.png) no-repeat center 0;
+}
+
+.header-sub .sub-meilan .sub-m3s{
+	display:block;
+	background:url(../images-shequ/m3s_7cff047.png) no-repeat center 0;
+}
+
+.header-sub .sub-meilan .sub-m3{
+	display:block;
+	background:url(../images-shequ/meilan3_fa5c797.png) no-repeat center 0;
+}
+
+.header-sub .sub-meilan .sub-note3{
+	display:block;
+	background:url(../images-shequ/meilannote3_08eb5e5.png) no-repeat center 0;
+}
+
+.header-sub .sub-meilan .sub-metal{
+	display:block;
+	background:url(../images-shequ/meilanmetal_ffc5a14.png) no-repeat center 0;
+}
+
+.header-sub .sub-meilan .sub-note2{
+	display:block;
+	background:url(../images-shequ/meilannote2_2c82398.png) no-repeat center 0;
+}
+
+.header-sub ul{
+	padding-left:320px;
+}
+.header-sub ul li{
+	float:left;
+}
+.header-sub a{
+	width:125px;
+	height:25px;
+	color:#666;
+	text-align:center;
+	padding-top:95px;
+
+}
+
+.sub-wrap ul li{
+	animation: show 0.3s  linear;
+	-webkit-animation: show 0.5s  linear;
+	animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+}
+
+.sub-wrap ul li:nth-child(2){animation-delay:0.05s;-webkit-animation-delay:0.05s;}
+.sub-wrap ul li:nth-child(3){animation-delay:0.1s;-webkit-animation-delay:0.1s;}
+.sub-wrap ul li:nth-child(4){animation-delay:0.15s;-webkit-animation-delay:0.15s;}
+.sub-wrap ul li:nth-child(5){animation-delay:0.2s;-webkit-animation-delay:0.2s;}
+
+@keyframes show
+{
+	form{transform:translateX(0px);}
+	to{transform:translateX(-20px);}
+}
+
+
+
+/*社区导航区*/
+.shequ-header{
+	background-color:#f2f2f2;
+}
+.shequ-nav{
+	float:left;
+	padding:17px 0;
+}
+.shequ-nav li{
+	display:inline-block;
+	height:36px;
+	line-height:36px;
+}
+.shequ-nav ul{
+	color:#c2c4c8;
+	font-size:10px;
+	font-weight:normal;
+}
+.shequ-nav li a{
+	display:block;
+	padding:0 20px;
+	color:#222;
+}
+
+.shequ-search{
+	float:right;
+	margin:17px 0;
+	width:220px;
+	height:34px;
+	background:url(../images-shequ/main_icon.png) no-repeat 0 0;
+}
+.shequ-search input{
+	float:left;
+	width:170px;
+	height:34px;
+	color:#c5c5c5;
+	font-size:14px;
+	padding-left:10px;
+	border:none;
+	background:none transparent;
+}
+.shequ-search button{
+	float:left;
+	width:40px;
+	height:34px;
+	border:none;
+	background:none transparent;
+	cursor:pointer;
+}
+
+.shequ-content{
+	background-color:#f2f2f2;
+}
+
+
+/*社区主要区左侧*/
+.shequ-content .content-left{
+	width:716px;
+	float:left;
+}
+/*社区主要区域轮播图*/
+.shequ-content .shequ-roll-wrap{
+	width:716px;
+	height:306px;
+	overflow:hidden;
+	position:relative;
+}
+.shequ-content .shequ-roll-wrap .shequ-roll{
+	width:2148px;
+	height:278px;
+	padding-top:14px;
+	padding-bottom:14px;
+	background-color:#fff;
+	border:1px solid #e6e6e6;
+}
+.shequ-roll .roll-img a{
+	display:inline-block;
+	width:686px;
+	height:278px;
+}
+ .shequ-roll .roll-img ul li{
+	float:left;
+	margin-right:14px;
+	margin-left:14px;
+}
+.shequ-roll .roll_opacity{
+	width:686px;
+	height:43px;	
+	position:absolute;
+	left:14px;
+	bottom:14px;	
+	background:#000;
+	opacity:0.2;
+}
+.shequ-roll .roll_small{
+	width:686px;
+	height:43px;	
+	position:absolute;
+	left:14px;
+	bottom:14px;
+	
+}
+.shequ-roll .roll_small .roll_title{
+	float:left;
+	padding-left:20px;
+	line-height:43px;
+}
+.shequ-roll .roll_small .roll_title a{
+	font-size:16px;
+	color:#fff;
+}
+.shequ-roll .roll_small .roll_small_pic{
+	float:right;
+	margin-right:10px;
+	height:100%;
+	text-align:center;
+	position:relative;
+	z-index:2;
+}
+.shequ-roll .roll_small .roll_small_pic  span{
+	height:100%;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.shequ-roll .roll_small .roll_small_pic img{
+	width:50px;
+	height:30px;
+	border:1px solid #fff;
+	vertical-align:middle;
+	opacity:0.5;
+}
+
+.shequ-roll .roll_small .roll_small_pic .current_con{
+	opacity:1;
+}
+
+.shequ-list{
+	width:686px;
+	height:215px;
+	background:#fff;
+	margin-top:20px;
+	padding:14px;
+	border:1px solid #e6e6e6;
+	position:relative;
+}
+.shequ-list .list-info{
+	width:350px;
+	height:214px;
+	position:absolute;
+	right:20px;
+}
+.shequ-list .list-info img{
+	position:absolute;
+	left:-330px;
+}
+.shequ-list .list-info .title{
+	display:inline-block;
+	height:35px;
+	background-color:#0daaea;
+	color:#fff;
+	font-size:16px;
+	line-height:35px;
+	padding:0 10px;
+	text-align:center;
+}
+
+.shequ-list .list-info h3{
+	margin-top:6px;
+}
+.shequ-list .list-info .info-m{
+	font-size:12px;
+	color:#9b9b9b;
+	margin-top:10px;
+}
+.shequ-list .list-info .info-m .read-more{
+	color:#32a5e7;
+	margin-right:0px;
+	float:right;
+}
+.shequ-list .list-info span{
+	height:24px;
+	line-height:24px;
+	display:inline-block;
+	font-size:12px;
+	color:#9b9b9b;
+	margin-right:20px;
+}
+.shequ-list .list-info i{
+	display:inline-block;
+	width:24px;
+	height:24px;
+	float:left;
+}
+.shequ-list .list-info p{
+	margin-top:10px;
+	color:#515151;
+}
+
+.shequ-list .list-info .sina a{
+	display:block;
+	width:24px;
+	height:22px;
+	background:url(../images-shequ/main_icon.png) -60px -630px;
+	margin-top:15px;
+}
+
+
+.shequ-post{
+	width:674px;
+	background:#fff;
+	margin-top:20px;
+	padding:20px;
+	border:1px solid #e6e6e6;
+}
+.shequ-post .post-title{
+	margin-bottom:20px;
+}
+.shequ-post .post-title h3{
+	float:left;
+}
+.shequ-post .post-title  .title-info{
+	float:right;
+	margin-right:5px;
+	font-size:12px;
+	color:#bc99bc;
+	height:22px;
+	line-height:22px;
+}
+
+.shequ-post .post-title  .title-info span{
+	font-size:12px;
+	color:#333;
+}
+
+.shequ-post .post-list ul li{
+	height:60px;
+	line-height:60px;
+	border-top:1px solid #e6e6e6;
+	position:relative;
+}
+.shequ-post .post-list ul li img{
+	display:inline-block;
+	margin:8px 0;
+	width:44px;
+	height:44px;
+	border-radius:22px;
+	box-shadow:inset 0px 0px 1px #ddd;
+}
+
+.shequ-post .post-list ul li .post-theme{
+	display:inline-block;
+	margin-left:26px;
+	width:400px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+
+}
+.shequ-post .post-list ul li .post-theme a{
+	font-size:16px;
+}
+
+.shequ-post .post-list ul li .user{
+	float:right;
+	width:95px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	color:#999;
+	text-align:right;
+}
+.shequ-post .post-list ul li .user a{
+	color:#999;
+}
+
+.shequ-post .post-list .post-last{
+	border-bottom:1px solid #e6e6e6;
+}
+
+/*社区主要区右侧*/
+.shequ-content .content-right{
+	width:270px;
+	padding:16px;
+	border:1px solid #e6e6e6;
+	background-color:#fff;
+	float:right;
+}
+
+.shequ-content .content-right .signin .signin_btn{
+	background-color:#43b56b;
+	color:#fff;
+	font-size:24px;
+}
+.shequ-content .content-right .signin .signin_btn .weekday{
+	display:inline-block;
+	width:110px;
+	height:49px;
+	color:#000;
+	line-height:55px;
+	text-align:center;
+	font-size:18px;
+	margin:6px 38px 10px 24px;
+	background:url(../images-shequ/main_icon.png) -110px -219px;
+}
+.signin .o_btn{
+	margin-top:10px;
+}
+
+
+.signin .o_btn a{
+	display:inline-block;
+	width:128px;
+	height:62px;
+	overflow:hidden;
+}
+.content-right .column{
+	margin-top:30px;
+	width:100%;
+	overflow:hidden;
+
+}
+.content-right .hot_section ul{
+	display:block;
+	width:272px;
+	height:204px;
+	margin-top:10px;
+	border-bottom:1px solid #ddd;
+}
+.content-right .hot_section li{
+	width:135px;
+	height:40px;
+	line-height:40px;
+	border-top:1px solid #ddd;
+	border-right:1px solid #ddd;
+	float:left;
+	text-align:center;
+}
+
+.content-right .hot_section li a:hover{
+	color:#4ebaf2;
+}
+.content-right .new_activity .total_act{
+	border-top:1px solid #e6e6e6;
+	margin-top:13px;
+}
+.content-right .new_activity .activity{
+	position:relative;
+	margin-top:13px;
+	color:#515151;
+}
+
+.content-right .new_activity img{
+	position:absolute;
+	top:0;
+	left:0;
+	border:1px solid #eeeeee;
+}
+
+.content-right .activity h4{
+	margin-left:140px;
+}
+
+.content-right .activity p{
+	margin-left:140px;
+	margin-top:10px;
+	font-size:12px;
+
+}
+.content-right .activity a{
+	margin-left:140px;
+	margin-top:6px;
+	display:inline-block;
+	width:64px;
+	height:25px;
+	line-height:25px;
+	text-align:center;
+	font-size:12px;
+	border-radius:2px;
+	background-color:#4ebaf2;
+	color:#fff;
+}
+.firmware_tabs{
+	margin-top:30px;	
+}
+
+.tabs_title li{
+	display:inline-block;
+	width:132px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border-bottom:1px solid #e6e6e6;
+	float:left;
+	position:relative;
+}
+.tabs_title .cur{
+	color:#32a5e7;
+}
+.tabs_title .cur s{
+	display:black;
+	width:130px;
+	height:39px;
+	border:1px solid #e6e6e6;
+	border-bottom:2px solid #fff;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:3;
+}
+.firmware_tabs .tabs_info h3{
+	margin-top:10px;
+}
+.firmware_tabs .tabs_info p{
+	margin-top:5px;
+}
+.firmware_tabs .tabs_info li a{
+	color:#32a5e7;
+	display:inline-block;
+	margin:8px 23px 8px 0;
+
+	
+}
+.firmware_tabs .tabs_info a em{
+	display:inline-block;
+	width:8px;
+	height:15px;
+	background:url(../images-shequ/main_icon.png) 0 -83px;
+}
+
+.firmware_tabs .tabs_info .download{
+	width:100%;
+	height:46px;
+	line-height:46px;
+	text-align:center;
+	margin-top:5px;
+	background-color:#32a5e7;
+}
+.firmware_tabs .tabs_info .download a{
+	display:block;
+	font-size:18px;
+	color:#fff;
+	margin:0;
+}
+ .shop h3 , .lessons h3{
+ 	border-bottom:1px solid #e6e6e6;
+ 	margin-bottom:16px;
+ 	padding-bottom:12px;
+ }
+ .shop img , .lessons img{
+ 	border:1px solid #dddddd;
+ }
+
+
+.shop li{
+	height:38px;
+	line-height:38px;
+	border-bottom:1px solid #ddd;
+}
+.lessons li{
+	width:88px;
+	height:25px;
+	line-height:20px;
+	text-align:center;
+	font-size:14px;
+	float:left;
+	background:url(../images-shequ/public.png) no-repeat right 1px;
+}
+.lessons li a{
+	display:inline-block;
+
+}
+.contact{
+	margin-top:40px;
+}
+.contact .tabs_info{
+	text-align:center;
+}
+
+.contact .tabs_info li{
+	height:275px;
+}
+	
+#gotop{
+	display:none;
+	width:48px;
+	height:48px;
+	border:1px solid #e6e6e6;
+	background-color:#fff;
+	position:fixed;
+	bottom:80px;
+	right:65px;
+	background-image:url(../images-shequ/scrolltop2.jpg);
+	background-position:0 -48px;
+}
+#gotop:hover{
+	background-position:0 0;
+}
