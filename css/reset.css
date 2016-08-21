@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+ul,li,dl,dt,dd{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+div,span,p,a,ul,li,dl,dt,dd{
+	font-size:14px;
+	font-family:"微软雅黑";
+	color:#333;
+}
+input,button{
+	outline:none;
+}
+
+/*清浮动*/
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+	height:0;
+}
+.clearfix{
+	zoom:1;
+}
