@@ -672,3 +672,18 @@
 	height:275px;
 }
 	
+#gotop{
+	display:none;
+	width:48px;
+	height:48px;
+	border:1px solid #e6e6e6;
+	background-color:#fff;
+	position:fixed;
+	bottom:80px;
+	right:65px;
+	background-image:url(../images-shequ/scrolltop2.jpg);
+	background-position:0 -48px;
+}
+#gotop:hover{
+	background-position:0 0;
+}

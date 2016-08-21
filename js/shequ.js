@@ -48,14 +48,6 @@ $(document).ready(function(){
 	},function(){
 	});
 
-	
-
-
-
-
-
-
-
 
 //切换
 $('.firmware_tabs .tabs_title li').mouseover(function(){
@@ -67,6 +59,31 @@ $('.contact .tabs_title li').mouseover(function(){
 	$(this).addClass('cur').siblings().removeClass('cur');
 	$('.contact .tabs_info li').eq($(this).index()).show().siblings().hide();
 })
+
+
+//回到顶部
+function goTop(){
+	WinHeight = $(window).height();  //可视窗口高度
+	GoHeight = $(document).scrollTop(); //页面显示高度
+	if (WinHeight < GoHeight){
+		 	$('#gotop').show();
+		 	
+		}else{
+			$('#gotop').hide();
+		}
+}
+//当页面滚动到特定位置发生函数
+ $(window).scroll(function(){ 
+        goTop();
+    });
+
+$('#gotop').click(function(){ //点击返回到顶部
+	$('html, body').animate({
+		scrollTop:'0',
+	},500);
+})
+
+
 
 
 })
